@@ -5,12 +5,12 @@
  * @argc: The number of arguments supplied to the program.
  * @argv: An array of pointers to the arguments.
  *
- * Return: Alway o.
+ * Return: Always o.
  */
-int main (int argc, char *argv[])
+int main(int argc, char *argv[])
 {
-	(void)argc;
-	printf("%s\n" , argv[0]);
+	(void) argc;
+	printf("%s\n", argv[0]);
 
 	return (0);
 }

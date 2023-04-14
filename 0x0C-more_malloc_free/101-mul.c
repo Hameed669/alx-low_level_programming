@@ -1,7 +1,6 @@
-#include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
-
+#include <stdlib.h>
+#include "main.h"
 
 /**
  * main - multiplies two positive numbers
@@ -26,7 +25,7 @@ int i, j;
 		}
 
 	}
-	mul = atol(argv[1]) * atol(argv[2]);
+	mul = atol(argv[1]) *  atol(argv[2]);
 	printf("%lu\n", mul);
 return (0);
 }

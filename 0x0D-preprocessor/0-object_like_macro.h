@@ -1,9 +1,9 @@
-#ifndef OBJECT_LIKE_MARCO_H
-#define OBJECT_LIKE_MARCO_H
+#ifndef OBJECT_LIKE_MACRO_H
+#define OBJECT_LIKE_MACRO_H
 
 /*
- * file: Object_like_marco.h
- * desc: Header file that define a marco named
+ * File: 0-object_like_macro.h
+ * Desc: Header file that defines a macro named
  */
 
 #define SIZE 1024

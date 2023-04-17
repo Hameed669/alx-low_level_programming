@@ -1,10 +1,12 @@
-#ifndef FUNCTION_LIKE_MARCO
-#define FUNCTION_LIKE_MARCO
+#ifndef FUNCTION_LIKE_MARCO_H
+#define FUNCTION_LIKE_MARCO_H
 
 /*
- * file: 3-function_like_marco.h
- * desc: Header file that defines a function-like macro ABS(x)
+ * File: 3-function_like_macro.h
+ * Desc: Header file that defines a function-like macro ABS(x)
+ *       that computes the absolute value of a number x.
  */
 
-#define ABS(x) ((x) < 0 ? (-x) :(x))
+#define ABS(x) ((x) < 0 ? (-x) : (x))
+
 #endif

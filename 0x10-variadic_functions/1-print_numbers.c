@@ -3,10 +3,10 @@
 #include <stdarg.h>
 
 /**
- * print_number - ...
- * @separator: ...
- * @n: ...
- * Return: ...
+ * print_numbers - print number & new line
+ * @separator: string
+ * @n: numbers of element
+ * Return: void
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {

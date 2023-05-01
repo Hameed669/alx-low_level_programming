@@ -1,6 +1,5 @@
-#include <cstdlib>
 #include "lists.h"
-
+#include <stdlib.h>
 /**
  * free_listint_safe - frees a listint_t list.
  * @h: pointer to a pointer to the head of the list
@@ -13,21 +12,21 @@ size_t free_listint_safe(listint_t **h)
 	listint_t *current = *h;
 	listint_t *next;
 
-	while (current != nullptr)
+	while (current != NULL)
 	{
 		count++;
 		next = current->next;
 
 		free(current);
-		current = nullptr;
+		current = NULL;
 
-		if (next != nullptr && next >= current)
+		if (next != NULL && next >= current)
 			break;
 
 		current = next;
 	}
 
-	*h = nullptr;
+	*h = NULL;
 
 	return (count);
 }

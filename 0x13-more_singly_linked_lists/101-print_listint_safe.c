@@ -13,6 +13,7 @@ size_t print_listint_safe(const listint_t *head)
 
 	while (head)
 	{
+
 		diff = head - head->next;
 		num++;
 		printf("[%p] %d/n", (void *)head, head->n);

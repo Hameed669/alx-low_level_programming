@@ -8,25 +8,25 @@
  *
  * Return: the number of nodes in the list
  */
+
 size_t print_listint_safe(const listint_t *head)
 {
-	size_t num = 0;
-	long int diff;
+		size_t count = 0;
+	const listint_t *temp1 = head;
 
-	while (head)
+	while (temp1 != NULL)
 	{
 
-		diff = head - head->next;
-		num++;
-		printf("[%p] %d/n", (void *)head, head->n);
-		if (diff > 0)
-			head = head->next;
-		else
+		printf("[%p] %d/n", (void *)temp1, temp1->n);
+		count++;
+
+		if (temp1 <= temp1->next)
 		{
-			printf("-> [%p] %d/n", (void *)head->next, head->next->n);
-			break;
+			printf("-> [%p] %d/n", (void *)temp1, head->n);
+			exit(98);
 		}
+		temp1 = temp1->next;
 	}
 
-	return (num);
+	return (count);
 }

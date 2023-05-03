@@ -17,12 +17,12 @@ size_t print_listint_safe(const listint_t *head)
 	while (temp1 != NULL)
 	{
 
-		printf("[%p] %d/n", (void *)temp1, temp1->n);
+		printf("[%p] [%d]/n", (void *)temp1, temp1->n);
 		count++;
 
 		if (temp1 <= temp1->next)
 		{
-			printf("-> [%p] %d/n", (void *)temp1, head->n);
+			printf("[%p] [%d]/n", (void *)temp1, head->n);
 			exit(98);
 		}
 		temp1 = temp1->next;

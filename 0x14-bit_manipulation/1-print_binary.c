@@ -7,20 +7,21 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int mask = 1;
-	int i;
+	unsigned long int next;
+	int i, count = 0;
 
-	for (i = 0; i < (int)sizeof(unsigned long int) * 8 - 1; i++)
+	for (i = 63; i >= 0; i--)
 	{
-		if (n >> (sizeof(unsigned long int) * 8 - 1 - i) == 1)
-			break;
-	}
+		next = n >> i;
 
-	for (; i >= 0; i--)
-	{
-		if ((n & (mask << i)) == 0)
-			_putchar('0');
-		else
+		if (next & 1)
+		{
 			_putchar('1');
+			count++;
+		}
+		else if (count)
+			_putchar('0');
 	}
+	if (!count)
+		_putchar('0');
 }

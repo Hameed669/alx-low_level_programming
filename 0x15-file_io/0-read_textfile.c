@@ -1,11 +1,5 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
-#include <fcntl.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <stddef.h>
 #include <stdlib.h>
 /**
  * read_textfile - reads a text file and prints it to the standard output
